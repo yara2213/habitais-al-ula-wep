@@ -6,7 +6,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
     const ageInput = document.querySelector('input[name="age"]');
     const phoneInput = document.querySelector('input[name="phone"]');
 
-    // Reset error messages and styles
+    
     document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
     [firstNameInput, emailInput, passwordInput, confirmPasswordInput, ageInput, phoneInput].forEach(input => {
         input.classList.remove('error', 'valid');
@@ -121,6 +121,6 @@ document.querySelector('form').addEventListener('submit', function (event) {
     if (isValid) {
         alert("Sign-up successful!");
     } else {
-        event.preventDefault(); // Prevent form submission if invalid
+        event.preventDefault(); 
     }
 });
