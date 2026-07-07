@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Log In</title>
+    <link href="css log in.css" rel="stylesheet" type="text/css" />
+    <style>
+        .error {
+            border: 2px solid red;
+        }
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Log In</legend>
+
+            <label> E-mail:
+                <input type="" name="email">
+                <span class="error-message" id="emailError"></span>
+            </label><br><br>
+
+            <label>Password:
+                <input type="password" name="pass">
+                <span class="error-message" id="passwordError"></span>
+            </label><br>
+
+            <button type="submit">Log In</button>
+        </fieldset>
+    </form>
+
+    <!-- Below is your custom application script -->
+    <script src="script log in.js"></script>
+</body>
+
+</html>

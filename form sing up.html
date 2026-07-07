@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sign Up</title>
+    <link href="css. sign up.css" rel="stylesheet" type="text/css" />
+    <style>
+        .error {
+            border: 2px solid red;
+        }
+        .valid {
+            border: 2px solid green;
+            background-color: rgba(0, 255, 0, 0.2);
+        }
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Sign Up</legend>
+            <label>First name:
+                <input type="text" name="fname">
+                <span class="error-message" id="fnameError"></span>
+            </label><br><br>
+            <label>Middle name:
+                <input type="text" name="mname">
+                <span class="error-message" id="mnameError"></span>
+            </label><br><br>
+            <label>Last name:
+                <input type="text" name="lname">
+                <span class="error-message" id="lnameError"></span>
+            </label><br><br>
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female<br><br>
+            <label>Age:</label><br>
+            <input type="number" name="age" min="18" max="100"><br><br>
+            <label>E-mail:</label><br>
+            <input type="" name="email">
+            <span class="error-message" id="emailError"></span>
+            <br><br>
+            <label>Password:</label><br>
+            <input type="password" name="pass">
+            <span class="error-message" id="passwordError"></span>
+            <br><br>
+            <label>Confirm Password:</label><br>
+            <input type="password" name="confirm_pass">
+            <span class="error-message" id="confirmPasswordError"></span>
+            <br><br>
+            <label>Phone Number:</label><br>
+            <input type="tel" name="phone">
+            <span class="error-message" id="phoneError"></span>
+            <br><br>
+            <label for="register_country" class="label">Select Country:</label><br>
+            <select name="country" id="register_country">
+                <option value="KSA">Saudi Arabia</option>
+                <option value="UAE">Emirate</option>
+                <option value="KWT">Kuwait</option>
+                <option value="USA">America</option>
+                <option value="IT">Italy</option>
+                <option value="ES">Spain</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <input type="submit" value="Sign Up">
+            
+        </fieldset>
+    </form>
+
+    <!-- Below is your custom application script -->
+    <script src="script sign up.js"></script>
+</body>
+
+</html>

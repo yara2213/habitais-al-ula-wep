@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 2px solid rgb(106, 55, 14);
+    background-image: url(back\ form.jpeg);
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: bganimation 15s infinite;
+}
+
+form {
+    background-color: rgba(137, 126, 126, 0.372);
+    padding: 30px;
+    width: 80%;
+    color: white;
+}
+
+form input {
+    background-color: rgba(34, 150, 150, 0.368);
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid transparent; 
+}
+
+/* نمط الحقول عند وجود خطأ */
+form input.error {
+    border: 2px solid red; /* تغيير لون الحدود إلى الأحمر عند وجود خطأ */
+    background-color: rgba(255, 0, 0, 0.2); /* تغيير لون الخلفية إلى لون خفيف من الأحمر */
+}
+
+/* نمط الحقول عند الإدخال الصحيح */
+form input.valid {
+    border: 2px solid green; /* تغيير لون الحدود إلى الأخضر عند الإدخال الصحيح */
+    background-color: rgba(0, 255, 0, 0.2); /* تغيير لون الخلفية إلى لون خفيف من الأخضر */
+}

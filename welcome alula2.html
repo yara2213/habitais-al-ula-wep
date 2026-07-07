@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlUla Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .text-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-section h1 {
+            font-size: 24px;
+            line-height: 1.8;
+            color: #d2b48c;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .text-section button {
+            background-color: #b28a66;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-transform: uppercase;
+            align-self: flex-start;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .images-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* عمودان */
+            grid-gap: 20px;
+        }
+
+        .images-section img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .images-section img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .images-section .large-image {
+            grid-column: span 2; /* الصورة الكبيرة تمتد على عمودين */
+            max-height: 200px; /* ضبط الارتفاع */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-section">
+            <h1>Welcome to our sustainable home of wonder in AlUla, an immersive experience where nature inspires creative expression, human connection and the pursuit of adventure.</h1>
+            <a href="Hotel Reservation Form.html"><button>Join us for an unforgettable journey.</button></a>
+        </div>
+        <div class="images-section">
+            <img src="Habitas_Al-Ula_1.jpg" alt="Large Image" class="large-image">
+            <img src="Habitas_Alula_Low-Res_0161.jpg" alt="Small Image">
+            <img src="العلا.jpg" alt="Small Image">
+        </div>
+    </div>
+</body>
+</html>
