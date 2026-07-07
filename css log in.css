@@ -26,14 +26,12 @@ form input {
     border: 1px solid transparent; 
 }
 
-/* نمط الحقول عند وجود خطأ */
 form input.error {
-    border: 2px solid red; /* تغيير لون الحدود إلى الأحمر عند وجود خطأ */
-    background-color: rgba(255, 0, 0, 0.2); /* تغيير لون الخلفية إلى لون خفيف من الأحمر */
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.2); 
 }
 
-/* نمط الحقول عند الإدخال الصحيح */
 form input.valid {
-    border: 2px solid green; /* تغيير لون الحدود إلى الأخضر عند الإدخال الصحيح */
-    background-color: rgba(0, 255, 0, 0.2); /* تغيير لون الخلفية إلى لون خفيف من الأخضر */
+    border: 2px solid green; 
+    background-color: rgba(0, 255, 0, 0.2); 
 }
